@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Tool Repository</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    select, input, button { margin: 5px; padding: 8px; width: 220px; }
+
+    #toolOutput, #searchResults {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    #toolOutput p, #searchResults p {
+      margin: 5px 0;
+    }
+    .section-title {
+      margin-top: 20px;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Tech Tool Repository</h2>
+
+  <!-- =========== PATH 1: Progressive Dropdown =========== -->
+  <div class="section-title">Path 1: Progressive Dropdown</div>
+
+  <label for="board">Select Board:</label>
+  <select id="board" onchange="updateGrades()">
+    <option value="">-- Select Board --</option>
+  </select>
+
+  <br/>
+
+  <label for="grade">Select Grade:</label>
+  <select id="grade" onchange="updateSubjects()">
+    <option value="">-- Select Grade --</option>
+  </select>
+
+  <br/>
+
+  <label for="subject">Select Subject:</label>
+  <select id="subject" onchange="updateChapters()">
+    <option value="">-- Select Subject --</option>
+  </select>
+
+  <br/>
+
+  <label for="chapter">Select Chapter:</label>
+  <select id="chapter" onchange="updateLessonPlans()">
+    <option value="">-- Select Chapter --</option>
+  </select>
+
+  <br/>
+
+  <label for="lessonPlan">Select Lesson Plan #:</label>
+  <select id="lessonPlan" onchange="fetchTool()">
+    <option value="">-- Select Lesson Plan # --</option>
+  </select>
+
+  <div id="toolOutput"></div>
+
+
+  <!-- =========== PATH 2: Search by Chapter =========== -->
+  <div class="section-title">Path 2: Search by Chapter</div>
+
+  <input 
+    type="text" 
+    id="chapterSearch" 
+    placeholder="Enter chapter name (e.g. 'Algebra')"
+  />
+  <button onclick="searchByChapter()">Search</button>
+
+  <div id="searchResults"></div>
+
+  <!-- The script to perform data fetch & logic -->
+  <script src="script.js"></script>
+
+</body>
+</html>
