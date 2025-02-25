@@ -215,7 +215,7 @@ async function searchByChapter() {
   const data = await fetchSheetData();
   // Filter by partial chapter match
   const matchingRows = data.filter(item => 
-    item.chapter.toLowerCase().includes(chapterInput)
+    item.chapter.toLowerCase() === chapterInput
   );
 
   if (matchingRows.length === 0) {
