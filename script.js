@@ -2,7 +2,7 @@
 // CONFIG
 // ====================
 const SHEET_ID   = "1F6v3cm_BglUmsuW2c4ZpsdpsU3mLzl3cOai9LtfuIwM"; // e.g. "1AbCdEFGHIjKlMnOPqrSTUVwxYZ12345"
-const API_KEY    = "AIzaSyCZUVJ17YsSU4ah5tlaUjmi-ELxcEgAFvQ";  // e.g. "AIzaSyD123abcXYZ"
+const API_KEY    = "AIzaSyC_tsJaFWjD_e6KdBFMcS-cuAXDr2d-giQ";  // e.g. "AIzaSyD123abcXYZ"
 const SHEET_NAME = "TrainingModules";
 
 // Build the Google Sheets API URL
