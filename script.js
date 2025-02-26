@@ -216,7 +216,6 @@ async function searchByChapter() {
   // Filter by partial chapter match
   const matchingRows = data.filter(item => 
     item.chapter.toLowerCase().includes(chapterInput)
-
   );
 
   if (matchingRows.length === 0) {
